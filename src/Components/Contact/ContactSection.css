@@ -1,0 +1,121 @@
+.contact-section {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.fast-float-img {
+  animation: floatFast 0.8s ease-in-out infinite;
+  max-width: 85%;
+}
+
+@keyframes floatFast {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.contact-details-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  color: white;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b48bf2;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: #888;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.white-text {
+  color: white;
+}
+
+.contact-divider {
+  width: 60px;
+  height: 4px;
+  background: #b48bf2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+.contact-item span {
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 6px;
+}
+
+.contact-item a {
+  color: #8ec9ff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #b48bf2;
+  text-decoration: underline;
+}
+
+.download-cv a {
+  display: inline-block;
+  background: #6c5ce7;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px #b49df2;
+}
+
+.download-cv a:hover {
+  background: #5d50c7;
+  box-shadow: 0 0 16px #a48ef2;
+}
+
+/* 🔁 Mobile screen improvements */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-details-box {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+  }
+
+  .fast-float-img {
+    max-width: 75%;
+  }
+}

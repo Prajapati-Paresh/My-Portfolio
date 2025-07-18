@@ -1,0 +1,93 @@
+.navbar {
+  background-color: #0E061B;
+  padding: 1rem 2rem;
+}
+
+.navbar-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Link Styles */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 8rem;
+}
+
+.navbar-links li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  padding: 4px 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c4b5fd;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #c4b5fd;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Toggle */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+}

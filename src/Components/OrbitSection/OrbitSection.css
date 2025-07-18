@@ -1,0 +1,176 @@
+.orbit-section {
+  background: #0E061B;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.orbit-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.orbit-heading .tag {
+  color: #0ef0d2;
+  font-size: 1.2rem;
+  margin: 0 8px;
+  opacity: 0.6;
+}
+
+.orbit-heading .highlight {
+  color: #fff;
+}
+
+.orbit-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 100%;
+  background: #7aff51;
+  border-radius: 2px;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px #7aff51;
+  }
+  50% {
+    box-shadow: 0 0 20px #7aff51;
+  }
+}
+
+.orbit-subtext {
+  font-size: 1rem;
+  color: #bbb;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.orbit-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto 0;
+}
+
+.orbit-circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotateOrbit 20s linear infinite;
+}
+
+.orbit-icon-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+}
+
+.orbit-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a1a2e;
+  padding: 8px;
+  box-shadow: 0 0 12px #9f6fff;
+  animation: floatIcon 2.5s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -8px);
+  }
+}
+
+@keyframes rotateOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit-center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #b48bf2, #551a8b);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px #b48bf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔁 Responsive Adjustments */
+@media (max-width: 768px) {
+  .orbit-heading {
+    font-size: 2rem;
+  }
+
+  .orbit-subtext {
+    font-size: 0.95rem;
+  }
+
+  .orbit-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .orbit-center-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .orbit-icon {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .orbit-heading {
+    font-size: 1.6rem;
+  }
+
+  .orbit-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .orbit-center-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .orbit-icon {
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+  }
+}

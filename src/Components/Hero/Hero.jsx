@@ -24,7 +24,7 @@ const Hero = () => {
         {/* Right Image */}
         <div className="col-lg-6 col-md-12 text-center">
           <img
-            src="public/img/1000_F_497221595_2pmKYZSrhR1LJsswJTfQNxFy460z0lor-removebg-preview.png"
+            src="src/assets/1000_F_497221595_2pmKYZSrhR1LJsswJTfQNxFy460z0lor-removebg-preview.png"
             alt="Hero"
             className="hero-img-unique img-fluid"
           />

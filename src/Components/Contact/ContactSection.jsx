@@ -9,7 +9,7 @@ const ContactSection = () => {
                 <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
                     <div className="fast-float-img mx-auto">
                         <img
-                            src="public/img/65263db085a313008a232ddf_Saly-38-particle-removebg-preview.png"
+                            src="src/assets/65263db085a313008a232ddf_Saly-38-particle-removebg-preview.png"
                             alt="Contact"
                             className="img-fluid"
                         />

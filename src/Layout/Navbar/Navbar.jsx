@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <img
-                    src="public/img/pngtree-software-developer-3d-icon-with-sleek-design-isolated-on-white-background-png-image_15139931-removebg-preview.png"
+                    src="src/assets/pngtree-software-developer-3d-icon-with-sleek-design-isolated-on-white-background-png-image_15139931-removebg-preview.png"
                     alt="Logo"
                     className="navbar-logo"
                 />

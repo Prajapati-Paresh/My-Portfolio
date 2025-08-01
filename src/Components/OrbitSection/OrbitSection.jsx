@@ -41,7 +41,7 @@ const OrbitSection = () => {
 
 
                 <div className="orbit-center-logo">
-                    <img src="public/img/pngtree-software-developer-3d-icon-with-sleek-design-isolated-on-white-background-png-image_15139931-removebg-preview.png" alt="Logo" style={{ width: '60%', height: '60%' }} />
+                    <img src="src/assets/pngtree-software-developer-3d-icon-with-sleek-design-isolated-on-white-background-png-image_15139931-removebg-preview.png" alt="Logo" style={{ width: '60%', height: '60%' }} />
                 </div>
             </div>
         </section>

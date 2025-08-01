@@ -4,32 +4,32 @@ import './CardSection.css';
 const cardData = [
   {
     title: 'Hotel Management System',
-    img: 'public/img/Screenshot 2025-07-17 222509.png',
+    img: 'src/assets/Screenshot 2025-07-17 222509.png',
     text: '"A complete solution to manage hotel rooms, bookings, and customer data efficiently."'
   },
   {
     title: 'Go Food Delivery System',
-    img: 'public/img/Screenshot 2025-07-17 222629.png',
+    img: 'src/assets/Screenshot 2025-07-17 222629.png',
     text: '"An all-in-one platform to manage orders, deliveries, restaurants, and customer satisfaction."'
   },
   {
     title: 'Croma Electronics Management System',
-    img: 'public/img/Screenshot 2025-07-17 222724.png',
+    img: 'src/assets/Screenshot 2025-07-17 222724.png',
     text: '"Streamline electronics retail with real-time inventory, invoicing, and customer management."'
   },
   {
     title: 'Sweet Shopping System',
-    img: 'public/img/Screenshot 2025-07-17 222855.png',
+    img: 'src/assets/Screenshot 2025-07-17 222855.png',
     text: '"Smartly handle your sweet shops orders, billing, and inventory in one place."'
   },
   {
     title: 'Restorn',
-    img: 'public/img/Screenshot 2025-07-17 223004.png',
+    img: 'src/assets/Screenshot 2025-07-17 223004.png',
     text: '"A restaurant UI project built to practice and explore Bootstrap components and layouts."'
   },
   {
     title: 'Pizza Shop & Delivery System',
-    img: 'public/img/Screenshot 2025-07-17 223220.png',
+    img: 'src/assets/Screenshot 2025-07-17 223220.png',
     text: '"Developed as a Bootstrap practice project to design a responsive pizza shop and delivery website."'
   },
 ];
